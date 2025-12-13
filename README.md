@@ -21,4 +21,6 @@ python manage.py makemigrations imagemproc
 
 python manage.py migrate
 
+python manage.py collectstatic
+
 python -m gunicorn myproject.wsgi:application --bind 0.0.0.0:9000
