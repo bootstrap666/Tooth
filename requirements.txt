@@ -5,3 +5,6 @@ Pillow
 torch
 torchvision
 gunicorn
+django-allauth
+requests
+jwt
