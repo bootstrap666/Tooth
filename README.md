@@ -3,7 +3,7 @@ Tooth is not an Odontological Object Tagging Hub.
 
 #To Install
 
-git clone https://github.com/bootstrap666/Tooth.git
+git clone https://github.com/UFSM-OdontoAI/Tooth.git
 
 cd Tooth
 
