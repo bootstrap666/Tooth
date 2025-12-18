@@ -6,8 +6,10 @@ from .models import Upload
 from io import BytesIO
 import cv2
 from .predict_unet import main
+from django.contrib.auth.decorators import login_required
 
 
+@login_required
 def upload_and_process_save(request):
     if request.method == 'POST':
         form = ImageUploadForm(request.POST, request.FILES)

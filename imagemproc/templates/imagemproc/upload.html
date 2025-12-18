@@ -52,6 +52,29 @@
             text-align: center;
             font-size: 0.9rem;
         }
+        .logout-btn {
+                background: #ffffff;
+                color: #0055A2;
+                border: none;
+                padding: 6px 14px;
+                border-radius: 4px;
+                font-weight: bold;
+                cursor: pointer;
+        }
+
+        .logout-btn:hover {
+                background: #e6e6e6;
+        }
+        .user-text strong,
+        .user-text small {
+                color: #ffffff;
+        }
+	.user-avatar {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		object-fit: cover;
+	}	
     </style>
 </head>
 
@@ -59,6 +82,7 @@
 
 <nav class="navbar">
     <span class="navbar-brand">UFSM — Tooth is not an Odontological Object Tagging Hub </span>
+    {% include "partials/user_header.html" %}
 </nav>
 
 <div class="container py-5">
@@ -70,7 +94,7 @@
         <img src="/static/ccs_logo.png" alt="Centro de Ciências da Saúde">
     </div>
 
-    <h1 class="text-center mt-4 mb-4">Sistema de Diagnóstico Automático</h1>
+    <h1 class="text-center mt-4 mb-4">Sistema de Segmentação automática de imagens</h1>
 
     <p class="text-center mb-5 px-4">
         Proporcionar aos pacientes atendidos no curso de Odontologia da Universidade Federal de Santa Maria 

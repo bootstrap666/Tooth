@@ -7,4 +7,5 @@ torchvision
 gunicorn
 django-allauth
 requests
-jwt
+PyJWT
+cryptography
